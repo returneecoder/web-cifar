@@ -31,11 +31,12 @@ export default function NavMenu() {
         <li>
           <NavLink
             to="/"
-            exact
+            exact="true"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
+            
           >
             Home
           </NavLink>
@@ -47,6 +48,7 @@ export default function NavMenu() {
             role="button"
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
+            exact="true"
           >
             About
           </NavLink>
@@ -57,7 +59,7 @@ export default function NavMenu() {
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}
-            tabIndex={0}
+            tabIndex={0}exact="true"
           >
             Projects
           </NavLink>
@@ -67,6 +69,7 @@ export default function NavMenu() {
             to="/contact"
             onClick={() => setShowNav(!showNav)}
             role="button"
+            exact="true"
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >

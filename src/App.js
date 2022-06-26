@@ -16,9 +16,9 @@ function App() {
         <NavMenu/>
         <Routes>
         <Route  path="/About" element={<About />} />
-        <Route exact path="/Contact" element={<Contact/>} />
-        <Route  exact path="/Projects" element={<Projects />} />
-        <Route exact path ='/' element={<Home />} />
+        <Route  path="/Contact" element={<Contact/>} />
+        <Route  path="/Projects" element={<Projects />} />
+        <Route path ='/' element={<Home />} />
        </Routes>
      </Router>
     

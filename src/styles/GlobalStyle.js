@@ -30,9 +30,9 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     object-fit: cover;
   }
-  button{
+  /* button{
     outline: none
-  }
+  } */
   .container {
     max-width: 1200px;
     width: 90%;
