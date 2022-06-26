@@ -26,15 +26,17 @@ const ProjectSectionStyle = styled.div`
   }
   .swiper-button-prev,
   .swiper-button-next {
-    
-  
-   background-color:var(--deep-dark);
-   z-index:10;
-  
-   top:200px;
-   transform:translateY(50%);
-   color:var(--gray-1);
-   border-radius:8px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: var(--deep-dark);
+    z-index: 10;
+    right: 60px;
+    left: auto;
+    top: 0;
+    transform: translateY(50%);
+    color: var(--gray-1);
+    border-radius: 8px;
   }
   .swiper-button-next {
     right: 0;
@@ -43,19 +45,37 @@ const ProjectSectionStyle = styled.div`
   .swiper-button-next::after {
     font-size: 2rem;
   }
+
+  @media only screen and (max-width: 640px) {
+    .swiper{
+      width:350px;
+    }
+    .projectItem__info{
+      width:90%;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+    
+    
+  }
+  }
   @media only screen and (max-width: 768px) {
+    .swiper-wrapper {
+      width: 768px;
+    }
     .projects__allItems {
       flex-direction: column;
-      max-width: 400px;
+      max-width: 350px;
       margin: 0 auto;
       margin-top: 7rem;
       gap: 5rem;
       .projectItem__img {
-        width: 100%;
+        width: 90%;
       }
     }
   }
 `;
+
 
 export default function ProjectsSection() {
   // console.log(projects);
